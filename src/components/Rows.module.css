@@ -3,6 +3,10 @@
   color: white;
 }
 
+.row_title {
+  font-size: 2rem;
+}
+
 .row__posters {
   display: flex;
   flex-direction: row;
@@ -11,16 +15,12 @@
   padding: 20px;
 }
 
-.row__posters::-webkit-scrollbar {
-  display: none;
-}
-
 .row__poster {
   width: 100%;
   object-fit: contain;
-  max-height: 100px;
+  max-height: 15rem;
   transition: transform 450ms;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .row__poster:hover {
@@ -28,7 +28,8 @@
 }
 
 .row__posterLarge {
-  max-height: 250px;
+  max-height: 50rem;
+  margin: 0 1.5rem;
 }
 
 .row__posterLarge:hover {

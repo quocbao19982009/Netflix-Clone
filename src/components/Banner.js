@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import PlayIcon from "../images/play-button.svg";
 import requests from "../api/requests";
 import classes from "./Banner.module.css";
 
@@ -18,7 +16,6 @@ const Banner = () => {
     fetchData();
   }, []);
 
-  console.log(movie);
   return (
     <header
       className={classes.banner}
@@ -32,8 +29,8 @@ const Banner = () => {
       }}
     >
       <div className={classes.banner__contents}>
-        <h1 className={classes.banner__title}>{movie.name}</h1>
-        <h2 className={classes.banner__description}>{movie.overview}</h2>
+        <h2 className={classes.banner__title}>{movie.name}</h2>
+        <p className={classes.banner__description}>{movie.overview}</p>
         <div className={classes.banner__buttons}>
           <button className={classes.banner__button}>
             <i className="fas fa-play"></i>

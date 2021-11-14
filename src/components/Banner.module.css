@@ -5,7 +5,7 @@
   color: white;
   object-fit: contain;
   height: 70vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-image: linear-gradient(
     180deg,
     transparent,
@@ -16,9 +16,12 @@
 }
 
 .banner__contents {
+  position: absolute;
+  top: 20vh;
   margin-left: 30px;
-  padding-top: 140px;
+  margin-top: 10;
   height: 190px;
+  max-width: 50%;
   /* border: 1px solid red; */
 }
 
@@ -32,7 +35,7 @@
   line-height: 1.3;
   padding-top: 1rem;
   font-size: 1.8rem;
-  max-width: 40%;
+  max-width: 80%;
   margin-bottom: 2.8rem;
   /* height: 80px; */
   /* border: 1px solid red; */

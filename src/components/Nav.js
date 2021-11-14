@@ -5,16 +5,16 @@ import netflixLogo from "../images/logo.png";
 const Nav = () => {
   const [show, handleShow] = useState(false);
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if (window.scrollY > 100) {
-  //       handleShow(true);
-  //     } else handleShow(false);
-  //   });
-  //   return () => {
-  //     window.removeEventListener("scroll");
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
 
   return (
     <nav className={`${classes.nav} ${show && classes.navBackground}`}>
@@ -27,19 +27,19 @@ const Nav = () => {
           ></img>
           <ul className={classes.nav__links}>
             <li>
-              <a>Home</a>
+              <a href="/#">Home</a>
             </li>
             <li>
-              <a>TV Shows</a>
+              <a href="/#">TV Shows</a>
             </li>
             <li>
-              <a>Movies</a>
+              <a href="/#">Movies</a>
             </li>
             <li>
-              <a>Recently Added</a>
+              <a href="/#">Recently Added</a>
             </li>
             <li>
-              <a>My List</a>
+              <a href="/#">My List</a>
             </li>
           </ul>
         </div>

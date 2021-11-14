@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { ModalDetailContextProvider } from "./store/ModalDetailContext";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ModalDetailContextProvider>
     <App />
-  </React.StrictMode>,
+  </ModalDetailContextProvider>,
   document.getElementById("root")
 );
 
