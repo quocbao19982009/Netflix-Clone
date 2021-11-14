@@ -26,13 +26,13 @@ const Banner = () => {
     >
       <div className={classes.banner__contents}>
         <h1 className={classes.banner__title}>{movie.name}</h1>
+        <h2 className={classes.banner__description}>{movie.overview}</h2>
         <div className={classes.banner__buttons}>
           <button className={classes.banner__button}>Play</button>
           <button className={classes.banner__button}>My List</button>
         </div>
-        <h2 className={classes.banner__description}>{movie.overview}</h2>
       </div>
-      <div className={classes["banner--fadebottom"]}></div>
+      {/* <div className={classes["banner--fadebottom"]}></div> */}
     </header>
   );
 };
