@@ -1,22 +1,32 @@
 .modal {
   z-index: 300;
   width: 100%;
-  height: 50%;
   position: fixed;
   top: 25%;
   background-size: 100%;
   background-size: cover;
   box-shadow: 0 1.5rem 4rem rgba(23, 24, 24, 15%);
   color: white;
+  /* position: relative; */
 }
 .modal_container {
   color: white;
   background: linear-gradient(90deg, #000 50%, transparent);
   height: 100%;
   width: 70%;
-  padding-top: 3rem;
+  /* padding-top: 3rem;
   padding-left: 5rem;
+  padding-bottom: 5rem; */
+  padding: 10rem 5rem;
   /* padding-right: 10rem; */
+}
+
+.closeIcon {
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 3rem;
 }
 
 .modal_title {
@@ -63,4 +73,77 @@
 .modal_button:first-child {
   color: white;
   background-color: red;
+}
+
+@media (max-width: 900px) {
+  .modal_overview {
+    color: #7a7a7a;
+    padding-top: 2rem;
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal_title {
+    font-size: 3rem;
+  }
+
+  .modal_info {
+    padding-top: 1.6rem;
+    font-size: 1.5rem;
+  }
+  .modal_overview {
+    color: #cac0c0;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .modal_container {
+    color: white;
+    background: linear-gradient(90deg, #000 50%, transparent);
+    height: 100%;
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    margin-right: 0;
+    /* padding-right: 10rem; */
+  }
+  .modal_button {
+    margin-bottom: 2rem;
+    width: 25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal_button {
+    margin-bottom: 2rem;
+    width: 25rem;
+  }
+
+  .modal_title {
+    font-size: 3rem;
+  }
+
+  .modal_info {
+    padding-top: 1.6rem;
+    font-size: 1.5rem;
+  }
+  .modal_overview {
+    color: #cac0c0;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .modal_container {
+    color: white;
+    background: linear-gradient(90deg, #000 50%, transparent);
+    height: 100%;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-right: 0;
+    /* padding-right: 10rem; */
+  }
 }

@@ -15,3 +15,38 @@ html {
 body {
   font-family: "Hind", sans-serif;
 }
+
+.app_loading_screen {
+  height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loader_container_hidden {
+  display: none;
+  visibility: hidden;
+  /* transition: ease-in-out 1000ms; */
+}
+
+.loader_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  background-color: #121212;
+  top: 0;
+  left: 0;
+  /* transition: ease-in-out 1000ms; */
+}

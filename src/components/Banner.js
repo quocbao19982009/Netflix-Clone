@@ -16,6 +16,14 @@ const Banner = () => {
     fetchData();
   }, []);
 
+  const truncateString = (str, num) => {
+    if (str.split(" ").length > num) {
+      return str.split(" ").splice(0, num).join(" ") + " ...";
+    } else {
+      return str;
+    }
+  };
+
   return (
     <header
       className={classes.banner}
@@ -30,7 +38,9 @@ const Banner = () => {
     >
       <div className={classes.banner__contents}>
         <h2 className={classes.banner__title}>{movie.name}</h2>
-        <p className={classes.banner__description}>{movie.overview}</p>
+        <p className={classes.banner__description}>
+          {movie.overview && truncateString(movie.overview, 40)}
+        </p>
         <div className={classes.banner__buttons}>
           <button className={classes.banner__button}>
             <i className="fas fa-play"></i>

@@ -25,23 +25,26 @@ const Nav = () => {
             src={netflixLogo}
             alt="Netflix Logo"
           ></img>
-          <ul className={classes.nav__links}>
-            <li>
-              <a href="/#">Home</a>
-            </li>
-            <li>
-              <a href="/#">TV Shows</a>
-            </li>
-            <li>
-              <a href="/#">Movies</a>
-            </li>
-            <li>
-              <a href="/#">Recently Added</a>
-            </li>
-            <li>
-              <a href="/#">My List</a>
-            </li>
-          </ul>
+          <div className={classes.nav__}>
+            <i className={`fas fa-caret-down ${classes.caretIcon}`}></i>
+            <ul className={classes.nav__links}>
+              <li>
+                <a href="/#">Home</a>
+              </li>
+              <li>
+                <a href="/#">TV Shows</a>
+              </li>
+              <li>
+                <a href="/#">Movies</a>
+              </li>
+              <li>
+                <a href="/#">Recently Added</a>
+              </li>
+              <li>
+                <a href="/#">My List</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className={classes.nav__leftside}>
           <div className={classes.search}>
