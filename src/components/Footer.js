@@ -5,10 +5,10 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className={classes.footer}>
-      <div>
+      <p>
         Made by Bao Nguyen with{" "}
         <i style={{ color: "red" }} className="fas fa-heart"></i> {year}
-      </div>
+      </p>
     </footer>
   );
 };

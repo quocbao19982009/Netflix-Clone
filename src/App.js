@@ -34,7 +34,7 @@ function App() {
           <Banner></Banner>
         </header>
         <MainContent />
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </div>
     </>
   );
