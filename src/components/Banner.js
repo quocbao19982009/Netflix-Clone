@@ -52,7 +52,6 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      {/* <div className={classes["banner--fadebottom"]}></div> */}
     </header>
   );
 };

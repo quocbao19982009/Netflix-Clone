@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import ModalDetailContext from "./store/ModalDetailContext";
 import Modal from "./components/Modal";
 import BounceLoader from "react-spinners/BounceLoader";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
           <Banner></Banner>
         </header>
         <MainContent />
+        <Footer></Footer>
       </div>
     </>
   );
