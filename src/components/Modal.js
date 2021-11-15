@@ -42,12 +42,10 @@ const Modal = () => {
 
           <div className={classes.modal_buttons}>
             <button className={classes.modal_button}>
-              <i className="fas fa-play"></i>
-              Play
+              <i className="fas fa-play"></i> Play
             </button>
             <button className={classes.modal_button}>
-              <i className="fas fa-plus"></i>
-              My List
+              <i className="fas fa-plus"></i> My List
             </button>
           </div>
         </div>

@@ -75,6 +75,17 @@
   background-color: red;
 }
 
+@media (min-height: 1000px) {
+  .modal {
+    height: 50%;
+  }
+  .modal_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 900px) {
   .modal_overview {
     color: #7a7a7a;
