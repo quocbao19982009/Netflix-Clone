@@ -1,11 +1,12 @@
 # Netflix Clone
 
-This project was built with React.
-Live Site: https://netflix-clone-cec3f.firebaseapp.com/
+<img src="https://github.com/quocbao19982009/Netflix-Clone/blob/master/netflix.png" alt="netflix clone" />
 
 ## General Infomation
 
-This is a Netflix Clone Project
+A simple Netflix clone using React and API from The Movie Database (TMDB) where users can see movie info.
+
+Live Site: https://netflix-clone-cec3f.firebaseapp.com/
 
 ## Features
 
